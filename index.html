@@ -10,7 +10,6 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,6 +24,13 @@
             background-color: #d6e2f0;
             font-family: 'Outfit', sans-serif;
             margin: 0;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
         }
 
         /* Card Styles */
@@ -67,14 +73,22 @@
     </style>
 </head>
 <body>
-    <div class="card">
-        <div class="card__image">
-            <img src="images/image-qr-code.png" alt="QR Code" class="card__image-content">
-        </div>
-        <div class="card__content">
-            <h2 class="card__title">Improve your front-end skills by building projects</h2>
-            <p class="card__text">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-        </div>
-    </div>
+    <header>
+        <!-- Header can be used for branding if needed -->
+    </header>
+    <main>
+        <section class="card">
+            <div class="card__image">
+                <img src="qr-code.png" alt="QR Code" class="card__image-content">
+            </div>
+            <div class="card__content">
+                <h2 class="card__title">Improve your front-end skills by building projects</h2>
+                <p class="card__text">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- Footer can be used for additional information -->
+    </footer>
 </body>
 </html>
